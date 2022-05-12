@@ -7,7 +7,124 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.nav-links{
+  width: 200px;
+  display:flex;
+  justify-content: left;
+  list-style: none;
+  flex-direction: column;
+  margin-left: 0;
+  alignment: left;
+
+
+
+}
+.form{
+  font-size:25px;
+}
+.form1{
+  font-size:20px;
+}
+.google-logout{
+  margin-left: 0;
+  margin-right: 10px;
+  text-align: right;
+  position:absolute; top:40px; right:0;
+  margin-bottom: 20px;
+}
+.gallery{
+  text-align: left;
+}
+.gallery1{
+  text-align: left;
+  align-items: center;
+}
+.for-h1{
+  text-align: center;
+  display: inherit;
+  color:green;
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+
+}
+.h4{
+  text-align: left;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  min-height: 10vh;
+  background: none;
+  color:black;
+  margin-left: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+.btn {
+  display: inline-block;
+  background: purple;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
 }

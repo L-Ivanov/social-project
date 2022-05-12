@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Google from "./components/Google";
+import React from "react";
+import PicturesGallery from "./components/PicturesGallery";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import AdditionalNav from "./components/AdditionalNav";
+import MainPage from "./components/MainPage";
 
+require('dotenv').config()
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+
+                <div className="form-control">
+                        <Route path='/' exact component={MainPage}/>
+                        <Route path='/' exact component={Google}/>
+                    <Switch>
+                        <Route path="/gallery/:username" exact component={PicturesGallery }/>
+                    </Switch>
+                    <Switch>
+                        <Route path='/' exact component={AdditionalNav}/>
+                    </Switch>
+
+                </div>
+        </BrowserRouter>
+
+    );
 }
 
 export default App;
